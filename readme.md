@@ -1,14 +1,8 @@
 # Parsing Human Protein Atlas Files - Currently a POC
 
-grabbing the tsv files from https://www.proteinatlas.org/about/download and parsing them into structs for rust. Also able to zip the files into a single json/csv output file as a graph of the App to be deserialized later. 
-
+grabbing the tsv files from https://www.proteinatlas.org/about/download and parsing them into structs for rust.
 to download the data files pass an arg
 `cargo run -- download`
-to export the loaded data as json  
-`cargo run -- json my_output.json`
-to export the loaded data as csv
-`cargo run -- csv my_output.csv`
-
 `cargo run` will read and parse the files into an app struct - see main.rs/main
 
 ```rust
